@@ -7,18 +7,14 @@ public class Factor {
 
     public static List<Integer> getFactors(int i) {
         List<Integer> list = new ArrayList<>();
-        if (i > 1) {
-            while (i % 2 == 0) {
-                list.add(2);
-                i /= 2;
+        int divisor = 2;
+        while (i > 1) {
+            while (i % divisor == 0) {
+                list.add(divisor);
+                i /= divisor;
             }
-            while (i % 3 == 0) {
-                list.add(3);
-                i /= 3;
-            }
+            divisor++;
         }
-        if (i > 1)
-            list.add(i);
         return list;
     }
 

@@ -12,9 +12,9 @@ public class Factor {
                 list.add(2);
                 i /= 2;
             }
-            if (i > 1)
-                list.add(i);
         }
+        if (i > 1)
+            list.add(i);
         return list;
     }
 

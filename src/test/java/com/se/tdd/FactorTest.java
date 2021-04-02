@@ -56,4 +56,9 @@ public class FactorTest {
         assertEquals(Arrays.asList(3, 3), Factor.getFactors(9));
     }
 
+    @Test
+    public void getFactors_of_a_multiplicationOfPrimes_returns_the_primes() {
+        assertEquals(Arrays.asList(2, 3, 3, 5, 11, 13, 13), Factor.getFactors(2 * 3 * 3 * 5 * 11 * 13 * 13));
+    }
+
 }

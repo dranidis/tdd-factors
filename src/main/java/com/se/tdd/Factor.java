@@ -9,10 +9,8 @@ public class Factor {
         List<Integer> list = new ArrayList<>();
         int divisor = 2;
         while (i > 1) {
-            while (i % divisor == 0) {
+            for (; i % divisor == 0; i /= divisor)
                 list.add(divisor);
-                i /= divisor;
-            }
             divisor++;
         }
         return list;

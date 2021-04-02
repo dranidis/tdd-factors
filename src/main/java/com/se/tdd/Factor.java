@@ -6,7 +6,10 @@ import java.util.List;
 public class Factor {
 
     public static List<Integer> getFactors(int i) {
-        return new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
+        if (i > 1)
+            list.add(2);
+        return list;
     }
 
 }

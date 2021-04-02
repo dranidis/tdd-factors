@@ -46,4 +46,8 @@ public class FactorTest {
         assertEquals(Arrays.asList(7), Factor.getFactors(7));
     }
 
+    @Test
+    public void getFactors_of_8_returns_2_2_2() {
+        assertEquals(Arrays.asList(2, 2, 2), Factor.getFactors(8));
+    }
 }

@@ -21,4 +21,9 @@ public class FactorTest {
         assertEquals(Arrays.asList(2), Factor.getFactors(2));
     }
 
+    @Test
+    public void getFactors_of_3_returns_3() {
+        assertEquals(Arrays.asList(3), Factor.getFactors(3));
+    }
+
 }

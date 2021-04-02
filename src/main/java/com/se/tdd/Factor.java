@@ -12,6 +12,10 @@ public class Factor {
                 list.add(2);
                 i /= 2;
             }
+            while (i % 3 == 0) {
+                list.add(3);
+                i /= 3;
+            }
         }
         if (i > 1)
             list.add(i);

@@ -50,4 +50,10 @@ public class FactorTest {
     public void getFactors_of_8_returns_2_2_2() {
         assertEquals(Arrays.asList(2, 2, 2), Factor.getFactors(8));
     }
+
+    @Test
+    public void getFactors_of_9_returns_3_3() {
+        assertEquals(Arrays.asList(3, 3), Factor.getFactors(9));
+    }
+
 }
